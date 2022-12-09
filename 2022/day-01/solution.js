@@ -1,10 +1,4 @@
-import { readFileSync } from 'fs';
-
-function readFile(fileName) {
-  const data = readFileSync(fileName, 'utf-8');
-  const dataArr = data.toString().split("\n");
-  return dataArr;
-}
+import { readFile } from "../../helpers.js";
 
 function getHorderElf(data) {
   let highestCalCount = 0;
